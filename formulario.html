@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Formulário HTML5</h1>
+
+    <form action="processa_formulario.php" method="GET">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade"><br><br>
+
+        <label for="genero">Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+
+        <label for="interesses">Interesses:</label><br>
+        <select id="interesses" name="interesses">
+            <option value="programacao">Programação</option>
+            <option value="design">Design</option>
+            <option value="esportes">Esportes</option>
+            <option value="musica">Música</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
